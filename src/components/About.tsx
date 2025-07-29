@@ -1,126 +1,167 @@
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
-  const stats = [
-    { number: "500+", label: "Empresas Atendidas" },
-    { number: "15+", label: "Anos de Experiência" },
-    { number: "98%", label: "Satisfação do Cliente" },
-    { number: "50+", label: "Especialistas" }
-  ];
-
-  const values = [
-    {
-      title: "Excelência",
-      description: "Comprometimento com a qualidade e resultados excepcionais em todos os projetos."
-    },
-    {
-      title: "Inovação",
-      description: "Soluções criativas e tecnológicas para os desafios empresariais modernos."
-    },
-    {
-      title: "Transparência",
-      description: "Comunicação clara e processos transparentes em todas as etapas."
-    },
-    {
-      title: "Sustentabilidade",
-      description: "Práticas responsáveis que geram valor para negócios e sociedade."
-    }
-  ];
-
   return (
-    <section id="sobre" className="py-20 bg-background">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in-up">
+          <div className="mb-6">
+            <span className="text-primary text-lg font-medium">Sobre Nós</span>
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Sobre a
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> ConsultPro</span>
+            Transformando Negócios com
+            <span className="block text-primary">Excelência e Inovação</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Somos uma consultoria especializada que combina expertise técnica, inovação e compromisso 
-            com resultados para transformar a gestão empresarial e impulsionar o crescimento sustentável.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Somos especialistas em transformação organizacional com mais de 15 anos de experiência 
+            em RH, BPO e ESG, impulsionando o crescimento sustentável das empresas.
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-          {stats.map((stat, index) => (
-            <div 
-              key={stat.label} 
-              className="text-center animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
-                {stat.number}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
+          {/* Left Content */}
+          <div className="animate-fade-in-up">
+            <h3 className="text-3xl font-bold text-foreground mb-6">
+              Nossa Jornada de Sucesso
+            </h3>
+            <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+              Desde 2008, temos sido pioneiros em soluções empresariais que combinam tecnologia, 
+              sustentabilidade e capital humano para criar organizações mais eficientes e responsáveis.
+            </p>
+            
+            <div className="space-y-4 mb-8">
+              {[
+                "15+ anos de experiência no mercado",
+                "500+ projetos concluídos com sucesso",
+                "98% de taxa de satisfação dos clientes",
+                "Certificações internacionais em ESG"
+              ].map((item, index) => (
+                <div key={index} className="flex items-center">
+                  <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center mr-4">
+                    <span className="text-white text-sm">✓</span>
+                  </div>
+                  <span className="text-muted-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            <Button variant="default" size="lg" className="bg-primary hover:bg-primary-dark">
+              Conheça Nossa História
+            </Button>
+          </div>
+
+          {/* Right Images Grid */}
+          <div className="relative">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <div className="w-full h-48 bg-card rounded-xl overflow-hidden shadow-elegant">
+                  <img 
+                    src="/lovable-uploads/8e1cb53c-64b5-4407-b765-01eeeabe4590.png"
+                    alt="Equipe trabalhando" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="w-full h-32 bg-card rounded-xl overflow-hidden shadow-elegant">
+                  <img 
+                    src="/lovable-uploads/42e99f14-c476-47f1-834e-5e1c034fe6e8.png"
+                    alt="Escritório moderno" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <div className="text-muted-foreground font-medium">
-                {stat.label}
+              <div className="mt-8">
+                <div className="w-full h-56 bg-card rounded-xl overflow-hidden shadow-elegant">
+                  <img 
+                    src="/lovable-uploads/bd21d597-fccd-4a81-9994-197ec6404c28.png"
+                    alt="Reunião estratégica" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
-          ))}
-        </div>
-
-        {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-          {/* Mission */}
-          <div className="animate-fade-in-up">
-            <h3 className="text-3xl font-bold text-foreground mb-6">
-              Nossa Missão
-            </h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Transformar organizações através de soluções integradas em Recursos Humanos, 
-              Business Process Outsourcing e ESG, promovendo crescimento sustentável e 
-              excelência operacional.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Acreditamos que o sucesso empresarial está intrinsecamente ligado ao 
-              desenvolvimento das pessoas, otimização de processos e responsabilidade 
-              socioambiental.
-            </p>
-          </div>
-
-          {/* Vision */}
-          <div className="animate-fade-in-up">
-            <h3 className="text-3xl font-bold text-foreground mb-6">
-              Nossa Visão
-            </h3>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              Ser reconhecida como a principal referência em consultoria empresarial 
-              integrada, liderando a transformação digital e sustentável das organizações.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Buscamos criar um ecossistema onde empresas prosperam através de práticas 
-              responsáveis, pessoas engajadas e processos eficientes.
-            </p>
-          </div>
-        </div>
-
-        {/* Values */}
-        <div>
-          <h3 className="text-3xl font-bold text-foreground text-center mb-12">
-            Nossos Valores
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <Card 
-                key={value.title} 
-                className="text-center p-6 hover:shadow-elegant transition-all duration-300 border-0 shadow-card bg-card/50 backdrop-blur-sm group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CardContent className="p-0">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <div className="w-8 h-8 bg-primary-foreground rounded-full" />
+            
+            {/* Floating Stats Card */}
+            <div className="absolute -bottom-6 left-6 right-6">
+              <Card className="bg-white/95 backdrop-blur-sm shadow-elegant">
+                <CardContent className="p-6">
+                  <div className="grid grid-cols-2 gap-4 text-center">
+                    <div>
+                      <div className="text-2xl font-bold text-primary">2.560+</div>
+                      <div className="text-sm text-muted-foreground">Clientes Atendidos</div>
+                    </div>
+                    <div>
+                      <div className="text-2xl font-bold text-primary">15+</div>
+                      <div className="text-sm text-muted-foreground">Anos de Mercado</div>
+                    </div>
                   </div>
-                  <h4 className="text-xl font-bold text-foreground mb-3">
-                    {value.title}
-                  </h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {value.description}
-                  </p>
                 </CardContent>
               </Card>
-            ))}
+            </div>
           </div>
+        </div>
+
+        {/* Mission & Values Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card className="p-8 hover:shadow-elegant transition-all duration-300 group">
+            <CardHeader className="pb-4">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <span className="text-2xl">🎯</span>
+              </div>
+              <CardTitle className="text-2xl font-bold text-foreground">Nossa Missão</CardTitle>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <p className="text-muted-foreground leading-relaxed">
+                Proporcionar soluções inovadoras que impulsionem o crescimento sustentável 
+                das empresas através de práticas responsáveis e eficientes.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="p-8 hover:shadow-elegant transition-all duration-300 group">
+            <CardHeader className="pb-4">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <span className="text-2xl">👁️</span>
+              </div>
+              <CardTitle className="text-2xl font-bold text-foreground">Nossa Visão</CardTitle>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <p className="text-muted-foreground leading-relaxed">
+                Ser referência nacional em consultoria empresarial, reconhecida pela 
+                excelência e inovação em soluções de RH, BPO e ESG.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="p-8 hover:shadow-elegant transition-all duration-300 group md:col-span-2 lg:col-span-1">
+            <CardHeader className="pb-4">
+              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <span className="text-2xl">💎</span>
+              </div>
+              <CardTitle className="text-2xl font-bold text-foreground">Nossos Valores</CardTitle>
+            </CardHeader>
+            <CardContent className="pt-0">
+              <ul className="space-y-2">
+                <li className="flex items-center text-muted-foreground">
+                  <span className="text-primary mr-2 text-sm">●</span>
+                  Transparência e ética
+                </li>
+                <li className="flex items-center text-muted-foreground">
+                  <span className="text-primary mr-2 text-sm">●</span>
+                  Inovação constante
+                </li>
+                <li className="flex items-center text-muted-foreground">
+                  <span className="text-primary mr-2 text-sm">●</span>
+                  Sustentabilidade
+                </li>
+                <li className="flex items-center text-muted-foreground">
+                  <span className="text-primary mr-2 text-sm">●</span>
+                  Excelência no atendimento
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
