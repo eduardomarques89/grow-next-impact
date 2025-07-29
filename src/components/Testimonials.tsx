@@ -113,20 +113,15 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Bottom Image Section */}
+        {/* Call to Action Section */}
         <div className="mt-20">
-          <div className="relative h-64 bg-card rounded-xl overflow-hidden">
-            <img 
-              src="/lovable-uploads/bd21d597-fccd-4a81-9994-197ec6404c28.png"
-              alt="Team working together" 
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-dark/50 flex items-center justify-center">
+          <div className="relative h-64 bg-primary/10 backdrop-blur-sm rounded-xl overflow-hidden">
+            <div className="absolute inset-0 bg-primary/20 flex items-center justify-center">
               <div className="text-center">
-                <h3 className="text-3xl font-bold text-dark-foreground mb-4">
+                <h3 className="text-3xl font-bold text-foreground mb-4">
                   Cuidamos Sempre dos Nossos Clientes com Seriedade
                 </h3>
-                <p className="text-dark-foreground/80 mb-6 max-w-2xl">
+                <p className="text-muted-foreground mb-6 max-w-2xl">
                   Nosso compromisso é com a excelência e resultados que transformam negócios
                 </p>
               </div>
