@@ -15,11 +15,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 24% 16%;
 
-    /* Turquoise Primary (baseado nas referências) */
-    --primary: 175 100% 45%;
+    /* Azul Estratégico (baseado na referência Unicompass) */
+    --primary: 195 100% 50%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 175 100% 55%;
-    --primary-dark: 175 100% 35%;
+    --primary-light: 195 100% 60%;
+    --primary-dark: 195 100% 40%;
 
     /* Dark sections */
     --dark-bg: 210 24% 12%;
@@ -33,20 +33,20 @@
     --muted-foreground: 215 25% 45%;
 
     /* Accent colors */
-    --accent: 175 100% 45%;
+    --accent: 195 100% 50%;
     --accent-foreground: 0 0% 98%;
-    --accent-light: 175 100% 55%;
+    --accent-light: 195 100% 60%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 214 20% 90%;
     --input: 214 20% 94%;
-    --ring: 175 100% 45%;
+    --ring: 195 100% 50%;
 
     /* Modern Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(175 100% 45%) 0%, hsl(175 100% 35%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(210 24% 12%) 0%, hsl(175 100% 45%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(195 100% 40%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 24% 12%) 0%, hsl(195 100% 50%) 100%);
     --gradient-dark: linear-gradient(135deg, hsl(210 24% 12%) 0%, hsl(210 24% 8%) 100%);
     
     /* Professional Shadows */

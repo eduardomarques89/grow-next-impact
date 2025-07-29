@@ -18,13 +18,13 @@ const Hero = () => {
           {/* Left Content */}
           <div className="animate-fade-in-up">
             <div className="mb-6">
-              <span className="text-primary text-lg font-medium">ConsultPro Agency</span>
+              <span className="text-primary text-lg font-medium">Consultoria Estratégica</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-foreground mb-6 leading-tight">
               Transforme Seu Negócio com
               <span className="block text-primary">
-                ConsultPro Agency
+                Consultoria Estratégica
               </span>
             </h1>
             

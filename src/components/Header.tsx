@@ -21,8 +21,8 @@ const Header = () => {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center mr-3">
               <div className="w-4 h-4 border-2 border-dark-foreground rounded-sm" />
             </div>
-            <h2 className="text-2xl font-bold text-dark-foreground">
-              ConsultPro
+            <h2 className="text-xl font-bold text-dark-foreground">
+              Consultoria Estratégica
             </h2>
           </div>
 
