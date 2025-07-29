@@ -8,7 +8,7 @@ const Portfolio = () => {
       company: "TechCorp Brasil",
       category: "Recursos Humanos",
       description: "Implementação completa de sistema HRIS para 5.000+ funcionários",
-      image: "/lovable-uploads/8e1cb53c-64b5-4407-b765-01eeeabe4590.png",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=500&h=300&fit=crop",
       results: "85% redução no tempo de processos"
     },
     {
@@ -16,7 +16,7 @@ const Portfolio = () => {
       company: "GreenIndustries",
       category: "ESG & Sustentabilidade",
       description: "Desenvolvimento de estratégia ESG completa com certificação internacional",
-      image: "/lovable-uploads/42e99f14-c476-47f1-834e-5e1c034fe6e8.png",
+      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&h=300&fit=crop",
       results: "Certificação B-Corp obtida"
     },
     {
@@ -24,7 +24,7 @@ const Portfolio = () => {
       company: "RetailMax",
       category: "BPO",
       description: "Terceirização completa do departamento financeiro e contábil",
-      image: "/lovable-uploads/bd21d597-fccd-4a81-9994-197ec6404c28.png",
+      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&h=300&fit=crop",
       results: "40% redução de custos operacionais"
     },
     {
@@ -32,7 +32,7 @@ const Portfolio = () => {
       company: "Innovation Hub",
       category: "Recursos Humanos",
       description: "Implementação de políticas de diversidade e inclusão",
-      image: "/lovable-uploads/3729814e-1de0-4ac9-92fe-abd5e00d409a.png",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
       results: "60% aumento na diversidade"
     }
   ];

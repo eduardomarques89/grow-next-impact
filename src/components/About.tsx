@@ -58,15 +58,15 @@ const About = () => {
               <div className="space-y-4">
                 <div className="w-full h-48 bg-card rounded-xl overflow-hidden shadow-elegant">
                   <img 
-                    src="/lovable-uploads/8e1cb53c-64b5-4407-b765-01eeeabe4590.png"
-                    alt="Equipe trabalhando" 
+                    src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=500&h=300&fit=crop"
+                    alt="Executivo em reunião" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-32 bg-card rounded-xl overflow-hidden shadow-elegant">
                   <img 
-                    src="/lovable-uploads/42e99f14-c476-47f1-834e-5e1c034fe6e8.png"
-                    alt="Escritório moderno" 
+                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=200&fit=crop"
+                    alt="Profissional no MacBook" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -74,8 +74,8 @@ const About = () => {
               <div className="mt-8">
                 <div className="w-full h-56 bg-card rounded-xl overflow-hidden shadow-elegant">
                   <img 
-                    src="/lovable-uploads/bd21d597-fccd-4a81-9994-197ec6404c28.png"
-                    alt="Reunião estratégica" 
+                    src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&h=350&fit=crop"
+                    alt="Equipe executiva em reunião" 
                     className="w-full h-full object-cover"
                   />
                 </div>

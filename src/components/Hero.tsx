@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-consulting.jpg";
 
 const Hero = () => {
   return (
@@ -8,7 +7,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: `url(${heroImage})`,
+          backgroundImage: `url(https://images.unsplash.com/photo-1519389950473-47ba0277781c)`,
         }}
       />
       
@@ -74,15 +73,15 @@ const Hero = () => {
               <div className="space-y-4">
                 <div className="w-full h-64 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src={heroImage} 
-                    alt="Team" 
+                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop" 
+                    alt="Executivo trabalhando no MacBook" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-48 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src={heroImage} 
-                    alt="Professional" 
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop" 
+                    alt="Executiva profissional" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -90,8 +89,8 @@ const Hero = () => {
               <div className="mt-8">
                 <div className="w-full h-80 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src={heroImage} 
-                    alt="Business meeting" 
+                    src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&h=400&fit=crop" 
+                    alt="Reunião executiva" 
                     className="w-full h-full object-cover"
                   />
                 </div>

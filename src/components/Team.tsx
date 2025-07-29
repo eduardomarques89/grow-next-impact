@@ -7,19 +7,19 @@ const Team = () => {
       name: "Ana Silva",
       role: "CEO & Fundadora",
       description: "15+ anos em consultoria empresarial e transformação organizacional",
-      image: "/lovable-uploads/3729814e-1de0-4ac9-92fe-abd5e00d409a.png"
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop"
     },
     {
       name: "Carlos Santos",
       role: "Diretor de RH",
       description: "Especialista em gestão de pessoas e desenvolvimento de talentos",
-      image: "/lovable-uploads/02f6c595-376f-46fc-994d-bbd0b05f73a1.png"
+      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=300&fit=crop"
     },
     {
       name: "Marina Costa",
       role: "Head de ESG",
       description: "Certificada em sustentabilidade corporativa e governança",
-      image: "/lovable-uploads/3da4f1c9-ce26-4b53-9065-e8bc4f0fbe56.png"
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop"
     }
   ];
 
