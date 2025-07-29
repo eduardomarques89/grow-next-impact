@@ -103,16 +103,7 @@ const Blog = () => {
 
         {/* Newsletter Section */}
         <div className="relative">
-          <div className="bg-gradient-dark rounded-2xl p-12 text-center overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0" style={{
-                backgroundImage: "url('/lovable-uploads/8e1cb53c-64b5-4407-b765-01eeeabe4590.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center"
-              }} />
-            </div>
-            
+          <div className="bg-black/80 backdrop-blur-sm rounded-2xl p-12 text-center overflow-hidden">
             <div className="relative z-10">
               <h3 className="text-3xl md:text-4xl font-bold text-dark-foreground mb-4">
                 Assine Nossa Newsletter & Receba as Últimas Notícias
