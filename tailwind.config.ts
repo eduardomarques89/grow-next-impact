@@ -30,6 +30,10 @@ export default {
 					light: 'hsl(var(--primary-light))',
 					dark: 'hsl(var(--primary-dark))'
 				},
+				dark: {
+					DEFAULT: 'hsl(var(--dark-bg))',
+					foreground: 'hsl(var(--dark-foreground))'
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
@@ -74,7 +78,7 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
-				'gradient-subtle': 'var(--gradient-subtle)'
+				'gradient-dark': 'var(--gradient-dark)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',

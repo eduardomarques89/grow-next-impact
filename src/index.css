@@ -15,11 +15,15 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 24% 16%;
 
-    /* Corporate Blue Primary */
-    --primary: 214 84% 56%;
+    /* Turquoise Primary (baseado nas referências) */
+    --primary: 175 100% 45%;
     --primary-foreground: 0 0% 98%;
-    --primary-light: 214 90% 68%;
-    --primary-dark: 214 84% 46%;
+    --primary-light: 175 100% 55%;
+    --primary-dark: 175 100% 35%;
+
+    /* Dark sections */
+    --dark-bg: 210 24% 12%;
+    --dark-foreground: 0 0% 98%;
 
     /* Professional Secondary */
     --secondary: 210 17% 98%;
@@ -28,22 +32,22 @@
     --muted: 210 14% 96%;
     --muted-foreground: 215 25% 45%;
 
-    /* Golden Accent */
-    --accent: 45 93% 58%;
-    --accent-foreground: 210 24% 16%;
-    --accent-light: 45 93% 68%;
+    /* Accent colors */
+    --accent: 175 100% 45%;
+    --accent-foreground: 0 0% 98%;
+    --accent-light: 175 100% 55%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 214 20% 90%;
     --input: 214 20% 94%;
-    --ring: 214 84% 56%;
+    --ring: 175 100% 45%;
 
-    /* Corporate Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(214 84% 46%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(214 84% 56%) 0%, hsl(45 93% 58%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 99%) 0%, hsl(210 17% 98%) 100%);
+    /* Modern Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(175 100% 45%) 0%, hsl(175 100% 35%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 24% 12%) 0%, hsl(175 100% 45%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(210 24% 12%) 0%, hsl(210 24% 8%) 100%);
     
     /* Professional Shadows */
     --shadow-elegant: 0 10px 40px -15px hsl(214 84% 56% / 0.2);
