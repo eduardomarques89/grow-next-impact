@@ -7,7 +7,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: `url(https://images.unsplash.com/photo-1519389950473-47ba0277781c)`,
+          backgroundImage: `url(https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1920&h=1080&fit=crop)`,
         }}
       />
       
@@ -73,15 +73,15 @@ const Hero = () => {
               <div className="space-y-4">
                 <div className="w-full h-64 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop" 
-                    alt="Executivo trabalhando no MacBook" 
+                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=300&fit=crop" 
+                    alt="Executiva em reunião corporativa" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-48 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=300&fit=crop" 
-                    alt="Executiva profissional" 
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop" 
+                    alt="CEO executivo" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -89,8 +89,8 @@ const Hero = () => {
               <div className="mt-8">
                 <div className="w-full h-80 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=500&h=400&fit=crop" 
-                    alt="Reunião executiva" 
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=400&fit=crop" 
+                    alt="Reunião de diretoria corporativa" 
                     className="w-full h-full object-cover"
                   />
                 </div>
