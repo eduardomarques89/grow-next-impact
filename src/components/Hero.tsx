@@ -73,15 +73,15 @@ const Hero = () => {
               <div className="space-y-4">
                 <div className="w-full h-64 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=300&fit=crop" 
-                    alt="Executiva em reunião corporativa" 
+                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=300&fit=crop" 
+                    alt="Escritório moderno com espaços abertos" 
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="w-full h-48 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=300&fit=crop" 
-                    alt="CEO executivo" 
+                    src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=500&h=300&fit=crop" 
+                    alt="Ambiente corporativo aberto" 
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -89,8 +89,8 @@ const Hero = () => {
               <div className="mt-8">
                 <div className="w-full h-80 bg-card rounded-xl overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=400&fit=crop" 
-                    alt="Reunião de diretoria corporativa" 
+                    src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=400&fit=crop" 
+                    alt="Escritório aberto com colaboração" 
                     className="w-full h-full object-cover"
                   />
                 </div>
