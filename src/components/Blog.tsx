@@ -7,21 +7,21 @@ const Blog = () => {
       category: "Tips",
       title: "Como líderes podem abordar tópicos sensíveis com funcionários",
       description: "Estratégias eficazes para comunicação transparente e empática no ambiente corporativo, construindo confiança e melhorando o clima organizacional.",
-      image: "/lovable-uploads/42e99f14-c476-47f1-834e-5e1c034fe6e8.png",
+      image: "/src/assets/leadership-communication.jpg",
       readTime: "5 min"
     },
     {
       category: "Tips", 
       title: "5 perguntas de entrevista para ajudar a garantir o melhor talento",
       description: "Descubra técnicas avançadas de recrutamento que vão além do currículo, identificando candidatos com potencial real de crescimento na sua empresa.",
-      image: "/lovable-uploads/42e99f14-c476-47f1-834e-5e1c034fe6e8.png",
+      image: "/src/assets/recruitment-interview.jpg",
       readTime: "7 min"
     },
     {
       category: "News",
       title: "Como apoiar mulheres em carreiras de desenvolvimento de software",
       description: "Iniciativas e práticas que promovem diversidade e inclusão no setor tech, criando oportunidades equitativas e ambientes mais inovadores.",
-      image: "/lovable-uploads/42e99f14-c476-47f1-834e-5e1c034fe6e8.png",
+      image: "/src/assets/women-tech-careers.jpg",
       readTime: "6 min"
     }
   ];
