@@ -102,35 +102,6 @@ const PropostaReclamatoria = () => {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 bg-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Nosso Processo
-            </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Metodologia especializada para resolução de conflitos trabalhistas
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { step: "01", title: "Análise", desc: "Avaliação detalhada do caso e viabilidade jurídica" },
-              { step: "02", title: "Estratégia", desc: "Elaboração de proposta de acordo personalizada" },
-              { step: "03", title: "Negociação", desc: "Mediação e condução das tratativas entre as partes" },
-              { step: "04", title: "Finalização", desc: "Formalização do acordo e acompanhamento pós-acordo" }
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="text-6xl font-bold text-primary mb-4">{item.step}</div>
-                <h3 className="text-2xl font-semibold text-white mb-3">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 bg-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
