@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import esgImage from "@/assets/esg-services.jpg";
+import sustainabilityImage from "@/assets/sustainability-meeting.jpg";
 
 const ESGSST = () => {
   const services = [

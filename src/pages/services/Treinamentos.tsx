@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import trainingImage from "@/assets/leadership-communication.jpg";
+import corporateTrainingImage from "@/assets/corporate-training.jpg";
 
 const Treinamentos = () => {
   const courses = [

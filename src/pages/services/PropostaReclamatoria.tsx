@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import womenTechImage from "@/assets/women-tech-careers.jpg";
+import legalImage from "@/assets/legal-consultation.jpg";
 
 const PropostaReclamatoria = () => {
   const services = [

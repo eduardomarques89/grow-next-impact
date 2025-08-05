@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import consultoriaImage from "@/assets/hero-consulting.jpg";
+import strategicImage from "@/assets/strategic-planning.jpg";
+import processImage from "@/assets/process-optimization.jpg";
 
 const ConsultoriaEmpresarial = () => {
   const features = [
@@ -60,29 +62,37 @@ const ConsultoriaEmpresarial = () => {
       {/* Features Section */}
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              Nossos Serviços de Consultoria
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Oferecemos uma gama completa de serviços para impulsionar seu negócio
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <Card key={feature.title} className="p-6 hover:shadow-elegant transition-all duration-300">
-                <CardContent className="pt-6">
-                  <div className="text-4xl mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    {feature.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+            <div>
+              <h2 className="text-4xl font-bold text-foreground mb-6">
+                Nossos Serviços de Consultoria
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Oferecemos uma gama completa de serviços para impulsionar seu negócio com estratégias personalizadas e resultados comprovados.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {features.map((feature) => (
+                  <Card key={feature.title} className="p-4 hover:shadow-elegant transition-all duration-300">
+                    <CardContent className="pt-4">
+                      <div className="text-3xl mb-3">{feature.icon}</div>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        {feature.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <img 
+                src={strategicImage} 
+                alt="Planejamento Estratégico" 
+                className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -90,27 +100,38 @@ const ConsultoriaEmpresarial = () => {
       {/* Process Section */}
       <section className="py-20 bg-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">
-              Nosso Processo
-            </h2>
-            <p className="text-xl text-white/80 max-w-2xl mx-auto">
-              Metodologia comprovada para garantir resultados excepcionais
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              { step: "01", title: "Diagnóstico", desc: "Análise completa da situação atual" },
-              { step: "02", title: "Estratégia", desc: "Desenvolvimento de soluções personalizadas" },
-              { step: "03", title: "Implementação", desc: "Execução e acompanhamento dos resultados" }
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="text-6xl font-bold text-primary mb-4">{item.step}</div>
-                <h3 className="text-2xl font-semibold text-white mb-3">{item.title}</h3>
-                <p className="text-white/70">{item.desc}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <img 
+                src={processImage} 
+                alt="Processo de Otimização" 
+                className="w-full h-[400px] object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold text-white mb-6">
+                Nosso Processo
+              </h2>
+              <p className="text-xl text-white/80 mb-8">
+                Metodologia comprovada para garantir resultados excepcionais
+              </p>
+              
+              <div className="space-y-6">
+                {[
+                  { step: "01", title: "Diagnóstico", desc: "Análise completa da situação atual da empresa" },
+                  { step: "02", title: "Estratégia", desc: "Desenvolvimento de soluções personalizadas" },
+                  { step: "03", title: "Implementação", desc: "Execução e acompanhamento dos resultados" }
+                ].map((item) => (
+                  <div key={item.step} className="flex items-start space-x-4">
+                    <div className="text-3xl font-bold text-primary">{item.step}</div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+                      <p className="text-white/70">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
