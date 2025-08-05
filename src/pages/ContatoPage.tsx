@@ -147,19 +147,19 @@ const ContatoPage = () => {
                 Informações de Contato
               </h2>
               
-              <div className="space-y-4 mb-12">
+              <div className="space-y-3 mb-12">
                 {contactInfo.map((info) => (
-                  <Card key={info.title} className="p-4 hover:shadow-elegant transition-all duration-300">
-                    <CardContent className="pt-4">
+                  <Card key={info.title} className="p-3 hover:shadow-elegant transition-all duration-300">
+                    <CardContent className="pt-3">
                       <div className="flex items-start">
-                        <div className="text-2xl mr-3 flex-shrink-0">{info.icon}</div>
+                        <div className="text-xl mr-3 flex-shrink-0">{info.icon}</div>
                         <div>
-                          <h3 className="text-lg font-semibold text-foreground mb-1">
+                          <h3 className="text-base font-semibold text-foreground mb-1">
                             {info.title}
                           </h3>
-                          <div className="space-y-1">
+                          <div className="space-y-0.5">
                             {info.details.map((detail, index) => (
-                              <p key={index} className="text-sm text-muted-foreground">
+                              <p key={index} className="text-xs text-muted-foreground">
                                 {info.link && index === 0 ? (
                                   <a href={info.link} className="hover:text-primary transition-colors">
                                     {detail}
