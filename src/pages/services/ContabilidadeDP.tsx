@@ -1,0 +1,94 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+
+const ContabilidadeDP = () => {
+  const services = [
+    {
+      icon: "📋",
+      title: "Contabilidade Geral",
+      description: "Escrituração contábil completa e demonstrações financeiras."
+    },
+    {
+      icon: "💰",
+      title: "Departamento Pessoal",
+      description: "Gestão completa de folha de pagamento e benefícios."
+    },
+    {
+      icon: "📊",
+      title: "Relatórios Gerenciais",
+      description: "Informações estratégicas para tomada de decisões."
+    },
+    {
+      icon: "🏛️",
+      title: "Obrigações Fiscais",
+      description: "Cumprimento de todas as obrigações tributárias."
+    }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      <Header />
+      
+      <section className="relative py-32 bg-dark">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Contabilidade e <span className="text-primary">Departamento Pessoal</span>
+          </h1>
+          <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
+            Cuidamos de toda a gestão contábil e de pessoal da sua empresa com 
+            precisão e conformidade legal.
+          </p>
+          <Button size="lg" className="bg-primary hover:bg-primary/90">
+            Solicitar Orçamento
+          </Button>
+        </div>
+      </section>
+
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-foreground mb-6">
+              Nossos Serviços
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service) => (
+              <Card key={service.title} className="p-6 hover:shadow-elegant transition-all duration-300">
+                <CardContent className="pt-6">
+                  <div className="text-4xl mb-4">{service.icon}</div>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {service.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-primary">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Simplifique sua Gestão
+          </h2>
+          <p className="text-xl text-white/90 mb-8">
+            Deixe conosco toda a burocracia contábil e de pessoal enquanto você foca no crescimento do seu negócio.
+          </p>
+          <Button variant="secondary" size="lg">
+            Falar com Especialista
+          </Button>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default ContabilidadeDP;
