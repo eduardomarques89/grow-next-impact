@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import businessConsultingImage from "@/assets/business-consulting.jpg";
 
 const Benefits = () => {
   const benefits = [
@@ -41,7 +42,7 @@ const Benefits = () => {
             <div className="relative">
               <div className="w-full h-96 bg-card rounded-xl overflow-hidden shadow-elegant">
                 <img 
-                  src="/src/assets/business-consulting.jpg"
+                  src={businessConsultingImage}
                   alt="Business consulting solutions" 
                   className="w-full h-full object-cover"
                 />

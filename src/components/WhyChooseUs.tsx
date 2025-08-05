@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import teamCollaborationImage from "@/assets/team-collaboration.jpg";
 
 const WhyChooseUs = () => {
   return (
@@ -129,7 +130,7 @@ const WhyChooseUs = () => {
             <div className="mt-12">
               <div className="w-full h-64 bg-card rounded-xl overflow-hidden">
                 <img 
-                  src="/src/assets/team-collaboration.jpg" 
+                  src={teamCollaborationImage} 
                   alt="Professional team working together" 
                   className="w-full h-full object-cover"
                 />
