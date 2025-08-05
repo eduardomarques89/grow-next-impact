@@ -80,32 +80,43 @@ const ESGSST = () => {
 
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              Os Pilares ESG
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Construindo negócios sustentáveis e responsáveis
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pillars.map((pillar) => (
-              <Card key={pillar.letter} className="p-8 hover:shadow-elegant transition-all duration-300">
-                <CardContent className="pt-6 text-center">
-                  <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-3xl font-bold text-white">{pillar.letter}</span>
-                  </div>
-                  <h3 className="text-2xl font-semibold text-foreground mb-2">
-                    {pillar.title}
-                  </h3>
-                  <p className="text-lg text-primary mb-4">{pillar.subtitle}</p>
-                  <p className="text-muted-foreground">
-                    {pillar.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
+            <div>
+              <h2 className="text-4xl font-bold text-foreground mb-6">
+                Os Pilares ESG
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Construindo negócios sustentáveis e responsáveis através dos três pilares fundamentais.
+              </p>
+              <div className="space-y-6">
+                {pillars.map((pillar) => (
+                  <Card key={pillar.letter} className="p-4 hover:shadow-elegant transition-all duration-300">
+                    <CardContent className="pt-4">
+                      <div className="flex items-start space-x-4">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
+                          {pillar.letter}
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-foreground mb-1">
+                            {pillar.title} - {pillar.subtitle}
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            {pillar.description}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+            <div className="relative">
+              <img 
+                src={sustainabilityImage} 
+                alt="Sustentabilidade ESG" 
+                className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -67,29 +67,37 @@ const PropostaReclamatoria = () => {
 
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-foreground mb-6">
-              Como Podemos Ajudar
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Especialistas em resolução de conflitos trabalhistas
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service) => (
-              <Card key={service.title} className="p-6 hover:shadow-elegant transition-all duration-300">
-                <CardContent className="pt-6">
-                  <div className="text-4xl mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {service.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="relative">
+              <img 
+                src={legalImage} 
+                alt="Consultoria Jurídica" 
+                className="w-full h-[500px] object-cover rounded-2xl shadow-2xl"
+              />
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold text-foreground mb-6">
+                Como Podemos Ajudar
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Especialistas em resolução eficiente de conflitos trabalhistas.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {services.map((service) => (
+                  <Card key={service.title} className="p-4 hover:shadow-elegant transition-all duration-300">
+                    <CardContent className="pt-4">
+                      <div className="text-3xl mb-3">{service.icon}</div>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">
+                        {service.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        {service.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
