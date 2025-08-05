@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import womenTechImage from "@/assets/women-tech-careers.jpg";
 
 const PropostaReclamatoria = () => {
   const services = [
@@ -39,8 +40,17 @@ const PropostaReclamatoria = () => {
     <div className="min-h-screen">
       <Header />
       
-      <section className="relative py-32 bg-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-32 bg-dark overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={womenTechImage} 
+            alt="Proposta Reclamatória" 
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-dark/70" />
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Proposta de <span className="text-primary">Reclamatória Trabalhista</span>
           </h1>

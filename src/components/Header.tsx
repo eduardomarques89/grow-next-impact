@@ -1,15 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = [
-    { label: "Home", href: "#inicio" },
-    { label: "Services", href: "#servicos" },
-    { label: "Jobs", href: "#cases", hasDropdown: true },
-    { label: "Page", href: "#sobre", hasDropdown: true },
-    { label: "Blog", href: "#blog", hasDropdown: true },
+  const services = [
+    { label: "Consultoria Empresarial", href: "/servicos/consultoria-empresarial" },
+    { label: "Contabilidade e DP", href: "/servicos/contabilidade-dp" },
+    { label: "DHO & Desenvolvimento", href: "/servicos/dho-desenvolvimento" },
+    { label: "Recrutamento & Seleção", href: "/servicos/recrutamento-selecao" },
+    { label: "Treinamentos", href: "/servicos/treinamentos" },
+    { label: "ESG/SST", href: "/servicos/esg-sst" },
+    { label: "Proposta Reclamatória", href: "/servicos/proposta-reclamatoria" },
   ];
 
   return (
@@ -27,22 +38,74 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item) => (
-              <div key={item.label} className="relative group">
-                <a
-                  href={item.href}
-                  className={`text-dark-foreground hover:text-primary transition-colors duration-300 font-medium py-2 flex items-center ${
-                    item.label === 'Home' ? 'text-primary border-b-2 border-primary' : ''
-                  }`}
-                >
-                  {item.label}
-                  {item.hasDropdown && (
-                    <span className="ml-1 text-xs">▼</span>
-                  )}
-                </a>
-              </div>
-            ))}
+          <div className="hidden md:flex items-center">
+            <NavigationMenu>
+              <NavigationMenuList className="space-x-6">
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link 
+                      to="/" 
+                      className="text-dark-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                    >
+                      Home
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+                
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-dark-foreground hover:text-primary bg-transparent">
+                    Serviços
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid gap-2 p-4 w-80 bg-background border border-border rounded-md shadow-lg">
+                      {services.map((service) => (
+                        <NavigationMenuLink key={service.label} asChild>
+                          <Link
+                            to={service.href}
+                            className="block px-3 py-2 text-sm text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors"
+                          >
+                            {service.label}
+                          </Link>
+                        </NavigationMenuLink>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link 
+                      to="/blog" 
+                      className="text-dark-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                    >
+                      Blog
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link 
+                      to="/sobre-nos" 
+                      className="text-dark-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                    >
+                      Sobre Nós
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
+                    <Link 
+                      to="/contato" 
+                      className="text-dark-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                    >
+                      Contato
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
 
           {/* CTA Button */}
@@ -73,16 +136,55 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-dark border-t border-border">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {menuItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="block px-3 py-2 text-dark-foreground hover:text-primary font-medium transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              ))}
+              <Link
+                to="/"
+                className="block px-3 py-2 text-dark-foreground hover:text-primary font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              
+              {/* Mobile Services Submenu */}
+              <div className="px-3 py-2">
+                <div className="text-dark-foreground font-medium mb-2">Serviços</div>
+                <div className="ml-4 space-y-1">
+                  {services.map((service) => (
+                    <Link
+                      key={service.label}
+                      to={service.href}
+                      className="block px-2 py-1 text-sm text-dark-foreground hover:text-primary transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {service.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <Link
+                to="/blog"
+                className="block px-3 py-2 text-dark-foreground hover:text-primary font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Blog
+              </Link>
+
+              <Link
+                to="/sobre-nos"
+                className="block px-3 py-2 text-dark-foreground hover:text-primary font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sobre Nós
+              </Link>
+
+              <Link
+                to="/contato"
+                className="block px-3 py-2 text-dark-foreground hover:text-primary font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contato
+              </Link>
+
               <div className="px-3 py-2">
                 <Button variant="default" size="sm" className="w-full bg-primary hover:bg-primary-dark">
                   Contact Us
