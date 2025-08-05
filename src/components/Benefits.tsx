@@ -41,8 +41,8 @@ const Benefits = () => {
             <div className="relative">
               <div className="w-full h-96 bg-card rounded-xl overflow-hidden shadow-elegant">
                 <img 
-                  src="/lovable-uploads/3da4f1c9-ce26-4b53-9065-e8bc4f0fbe56.png"
-                  alt="Job Solution" 
+                  src="/src/assets/business-consulting.jpg"
+                  alt="Business consulting solutions" 
                   className="w-full h-full object-cover"
                 />
               </div>

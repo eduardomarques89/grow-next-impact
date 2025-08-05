@@ -129,8 +129,8 @@ const WhyChooseUs = () => {
             <div className="mt-12">
               <div className="w-full h-64 bg-card rounded-xl overflow-hidden">
                 <img 
-                  src="/lovable-uploads/02f6c595-376f-46fc-994d-bbd0b05f73a1.png" 
-                  alt="Professional team" 
+                  src="/src/assets/team-collaboration.jpg" 
+                  alt="Professional team working together" 
                   className="w-full h-full object-cover"
                 />
               </div>
