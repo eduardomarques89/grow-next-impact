@@ -121,6 +121,35 @@ const ESGSST = () => {
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="py-20 bg-dark">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-6">
+              Nosso Processo
+            </h2>
+            <p className="text-xl text-white/80 max-w-2xl mx-auto">
+              Implementação estruturada de práticas ESG e segurança do trabalho
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              { step: "01", title: "Diagnóstico", desc: "Avaliação da situação atual de ESG e segurança" },
+              { step: "02", title: "Estratégia", desc: "Desenvolvimento de plano de implementação sustentável" },
+              { step: "03", title: "Implementação", desc: "Execução das práticas e programas ESG/SST" },
+              { step: "04", title: "Monitoramento", desc: "Acompanhamento contínuo e relatórios de sustentabilidade" }
+            ].map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="text-6xl font-bold text-primary mb-4">{item.step}</div>
+                <h3 className="text-2xl font-semibold text-white mb-3">{item.title}</h3>
+                <p className="text-white/70">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
